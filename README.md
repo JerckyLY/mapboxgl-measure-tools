@@ -22,7 +22,7 @@
     ```
       npm install mapboxgl-measure-tool
     ```
-    ```
+    ```js
       import MapMesure from 'mapboxgl-measure-tool'
       mapboxgl.accessToken = 'pk.eyJ1IjoiamVyY2t5IiwiYSI6ImNqYjI5dWp3dzI1Y2YzMnM3eG0xNnV3bWsifQ.eQp4goc9Ng8SuEZcdgNJ_g';
        var map = new mapboxgl.Map({
