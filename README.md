@@ -4,7 +4,7 @@
 ## 使用
  - CDN:
    ```
-   <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.1/dist/mapMeasureTool.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.2/dist/mapMeasureTool.js"></script>
    ```
   
    ``` 
