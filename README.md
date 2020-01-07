@@ -7,7 +7,7 @@
    <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.1/dist/mapMeasureTool.js"></script>
    ```
   
-   ```
+   ``` 
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiamVyY2t5IiwiYSI6ImNqYjI5dWp3dzI1Y2YzMnM3eG0xNnV3bWsifQ.eQp4goc9Ng8SuEZcdgNJ_g';
         var map = new mapboxgl.Map({
@@ -38,9 +38,9 @@
    
 ## 截图
   - 测距:   
-  ![](assets/line.png)
+  ![](./assets/line.png)
   - 测面：   
-  ![](assets/area.png)
+  ![](./assets/area.png)
   
  
    
