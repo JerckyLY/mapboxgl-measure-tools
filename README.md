@@ -1,13 +1,13 @@
-# mapboxgl-measure-tools
+# mapboxgl-measure-tool
 基于mapboxgl、mapboxgl-draw、turf测量控件
 
 ## 使用
  - CDN:
-   ```
+   ```js
    <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.1/dist/mapMeasureTool.js"></script>
    ```
   
-   ```
+   ```js
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiamVyY2t5IiwiYSI6ImNqYjI5dWp3dzI1Y2YzMnM3eG0xNnV3bWsifQ.eQp4goc9Ng8SuEZcdgNJ_g';
         var map = new mapboxgl.Map({
