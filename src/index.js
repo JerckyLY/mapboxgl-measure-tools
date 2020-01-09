@@ -1,9 +1,12 @@
 // var turf =  require('turf')
 // var mapboxgl = require('mapbox-gl')
 // var MapboxDraw = require('@mapbox/mapbox-gl-draw')
-import turf from 'turf'
-import mapboxgl from 'mapbox-gl'
-import MapboxDraw from '@mapbox/mapbox-gl-draw'
+const turf = require('turf')
+const mapboxgl = require('mapbox-gl')
+const MapboxDraw = require('@mapbox/mapbox-gl-draw')
+// import turf from 'turf'
+// import mapboxgl from 'mapbox-gl'
+// import MapboxDraw from '@mapbox/mapbox-gl-draw'
 // import MapboxDraw from '@mapbox/mapbox-gl-draw'
 class MapMeasureTool {
     constructor () {

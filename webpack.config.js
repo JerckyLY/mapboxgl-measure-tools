@@ -9,17 +9,16 @@ const resolve = dir => path.join(__dirname, '.', dir)
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-    node: {
-        fs: 'empty' // 解决无法识别fs
-    },
-    entry: {
-        index: './src/index.js'
+    externals: {
+        "turf": 'turf', // npm原则，依赖不打包
+        "mapbox-gl":"mapboxgl",
+        "@mapbox/mapbox-gl-draw":"MapboxDraw"
     },
     output: {
         path: resolve('dist'), // 输出目录
-        filename: 'mapMeasureTool.js', // 输出文件
+        filename: 'index.js', // 输出文件
         libraryTarget: 'umd', // 采用通用模块定义
-        library: 'mapMeasureTool', // 库名称
+        library: 'MapMeasureTool', // 库名称
         libraryExport: 'default', // 兼容 ES6(ES2015) 的模块系统、CommonJS 和 AMD 模块规范
         globalObject: 'this' // 兼容node和浏览器运行，避免window is not undefined情况
     },

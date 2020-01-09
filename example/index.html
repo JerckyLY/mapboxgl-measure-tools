@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
-    <script src="../dist/mapMeasureTool.js"></script>
+    <!--依赖-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <script src="https://cdn.bootcss.com/Turf.js/5.1.6/turf.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
+    <!--引入测试-->
+    <script src="../dist/index.js"></script>
     <style>
         body,html{
             width: 100%; height:100%;
@@ -24,7 +28,7 @@
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9'
     });
-    map.addControl(new mapMeasureTool(), 'top-right')
+    map.addControl(new MapMeasureTool(), 'top-right')
 </script>
 </body>
 </html>
