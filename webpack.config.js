@@ -10,9 +10,20 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
     externals: {
-        "turf": 'turf', // npm原则，依赖不打包
-        "mapbox-gl":"mapboxgl",
-        "@mapbox/mapbox-gl-draw":"MapboxDraw"
+        // npm原则，依赖不打包 针对不同环境 使用不同的依赖
+        "turf": 'turf',
+        "mapbox-gl":{
+            commonjs:"mapbox-gl",
+            commonjs2:'mapbox-gl',
+            amd:"mapbox-gl",
+            root:"mapboxgl"
+        },
+        "@mapbox/mapbox-gl-draw":{
+            commonjs:"@mapbox/mapbox-gl-draw",
+            commonjs2:"@mapbox/mapbox-gl-draw",
+            amd:"@mapbox/mapbox-gl-draw",
+            root:"MapboxDraw"
+        }
     },
     output: {
         path: resolve('dist'), // 输出目录
