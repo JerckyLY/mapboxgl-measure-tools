@@ -9,7 +9,7 @@
     <script src="https://cdn.bootcss.com/Turf.js/5.1.6/turf.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
     <!--引用-->
-    <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.5/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mapboxgl-measure-tool@1.0.6/dist/index.js"></script>
    ```
   
    ```js
