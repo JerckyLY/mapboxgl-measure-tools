@@ -9,6 +9,9 @@ const resolve = dir => path.join(__dirname, '.', dir)
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
+    entry: {
+        index: './src/index.js'
+    },
     externals: {
         // npm原则，依赖不打包 针对不同环境 使用不同的依赖
         "turf": 'turf',
